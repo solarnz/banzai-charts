@@ -59,7 +59,6 @@ spec:
         - "--retention.resolution-raw={{ .Values.compact.retentionResolutionRaw }}"
         - "--retention.resolution-5m={{ .Values.compact.retentionResolution5m }}"
         - "--retention.resolution-1h={{ .Values.compact.retentionResolution1h }}"
-        - "--block-sync-concurrency={{ .Values.compact.blockSyncConcurrency }}"
         - "--compact.concurrency={{ .Values.compact.compactConcurrency }}"
         - "--wait"
 {{ with .Values.compact.extraArgs }}{{ toYaml . | indent 8 }}{{- end }}

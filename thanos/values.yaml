@@ -17,8 +17,6 @@ store:
   grpcSeriesMaxConcurrency: 20
   # Repeat interval for syncing the blocks between local and remote view.
   syncBlockDuration: 3m
-  # Number of goroutines to use when syncing blocks from object storage.
-  blockSyncConcurrency: 20
   # Log filtering level.
   logLevel: info
   # Log format to use. Possible options: logfmt or json.
@@ -636,8 +634,6 @@ compact:
   retentionResolution5m: 120d
   # How long to retain samples of resolution 2 (1 hour) in bucket. 0d - disables this retention
   retentionResolution1h: 1y
-  # Number of goroutines to use when syncing block metadata from object storage.
-  blockSyncConcurrency: 20
   # Number of goroutines to use when compacting groups.
   compactConcurrency: 1
   # Log filtering level.
